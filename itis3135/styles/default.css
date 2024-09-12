@@ -24,11 +24,15 @@ h2 {
     text-align: center;
 }
 
-img {
+figure img {
     width: 80%;
 }
 
 figure {
     text-align: center;
     font-style: italic;
+}
+
+main p {
+    text-align: center;
 }
