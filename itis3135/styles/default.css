@@ -1,18 +1,18 @@
 body {
     background-color: lightgray;
     text-align: center;
-    color: darkcyan;
+    color: blueviolet;
     font-family: 'Courier New', Courier, monospace;
     font-size: 140%;
 }
 
 a {
-    color: red;
+    color: rgb(247, 255, 11);
     text-decoration: none;
 }
 
 a:hover {
-    color: gold;
+    color: brown;
 }
 
 main {
