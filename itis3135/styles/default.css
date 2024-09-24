@@ -1,12 +1,13 @@
 body {
-    background-color: darkgray;
+    background-color: lightgray;
     text-align: center;
     color: darkcyan;
     font-family: 'Courier New', Courier, monospace;
+    font-size: 140%;
 }
 
 a {
-    color: brown;
+    color: red;
     text-decoration: none;
 }
 
@@ -34,5 +35,6 @@ figure {
 }
 
 main p {
-    text-align: center;
+    text-align: left;
+    display: block;
 }
