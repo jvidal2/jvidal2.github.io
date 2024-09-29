@@ -25,16 +25,62 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    text-align: center;
+}
+
 figure img {
     width: 80%;
 }
+figcaption {
+    font-style: italic;
+}
 
 figure {
+    width: 100%;
     text-align: center;
-    font-style: italic;
+    margin: 20px auto;
 }
 
 main p {
     text-align: left;
     display: block;
+}
+
+table {
+    width: 100%;
+    margin: 0 auto;
+}
+
+th {
+    background-color: darkcyan;
+    color: white;
+    padding: 5px;
+    text-align: left;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 5px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+    background-color: #dad6d6;
+}
+
+figure tr:last-child {
+    font-weight: bold;
+}
+
+figure figcaption {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    font-size: 15px;
+    padding: 10px;
 }
