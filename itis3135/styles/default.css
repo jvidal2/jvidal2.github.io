@@ -84,3 +84,73 @@ figure figcaption {
     font-size: 15px;
     padding: 10px;
 }
+
+form {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    max-width: 600px;
+    min-width: 300px;
+    margin: 20px auto;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 3px;
+    background-color: rgba(240, 233, 196, 0.485);
+}
+
+form h3 {
+    color: black;
+}
+
+input, select, button {
+    width: 100%;
+    margin: 8px 0 0 0;
+    font-size: 1.1rem;
+}
+
+#button-reset {
+    background-color: rgb(229, 76, 76);
+    border: 2.5px solid darkred;
+    cursor: pointer;
+    border-radius: 4px;
+    color: white;
+}
+
+#button-submit {
+    background-color: rgb(83, 191, 238);
+    border: 2.5px solid darkblue;
+    cursor: pointer;
+    border-radius: 4px;
+    color: white;
+}
+
+label {
+    display: inline-flex;
+    align-items: center;
+    margin: 0.75rem 0;
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+label[for="excellent"], label[for="average"], label[for="poor"], label[for="yes"], label[for="no"] {
+    font-size: 0.7em;
+    font-weight: normal;
+}
+
+input[type="text"], input[type="tel"], input[type="email"] {
+    min-height: 2rem;
+    font-size: 0.7em;
+    width: 70%;
+    vertical-align: middle;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 10px;
+    min-height: 1.8em;
+    width: auto;
+    vertical-align: middle;
+}
+
+select {
+    width: 100%;
+    height: 2.5rem;
+}

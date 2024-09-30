@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Jazmin Vidal's Jaded Vulture 🂲 ITIS3135 Forms</title>
+        <link rel="stylesheet" href="styles/default.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div data-include="components/header.html"></div>
+        </header>
+        <main>
+            <h2>Forms</h2>
+
+            <form action="#" method="post">
+                <h3>Share your feedback</h3>
+                <label for="name">
+                    Name<span required>*</span>
+                </label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+
+                <label for="phone">
+                    Phone Number<span required>*</span>
+                </label><br>
+                <input type="tel" id="phone" name="phone" placeholder="(123) 456 - 7890" required><br>
+
+                <label for="email">
+                    Email<span required>*</span>
+                </label><br>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required><br>
+
+                <label>How would you rate your shopping experience with us?</label><br>
+                <input type="checkbox" id="excellent" name="experience" value="Excellent">
+                <label for="excellent">Excellent</label><br>
+                <input type="checkbox" id="average" name="experience" value="Average">
+                <label for="average">Average</label><br>
+                <input type="checkbox" id="poor" name="experience" value="Poor">
+                <label for="poor">Poor</label><br>
+
+                <label>Would you recommend us to others?</label><br>
+                <input type="radio" id="yes" name="recommend" value="Yes" required>
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="no" name="recommend" value="No">
+                <label for="no">No</label><br>
+
+                <label>How can we improve?</label>
+                <select id="improvement" name="improvement">
+                    <option value="select_service">Select an option</option>
+                    <option value="service">Service</option>
+                    <option value="pricing">Pricing</option>
+                    <option value="product_quality">Product Quality</option>
+                    <option value="collect_addition">Collection addition</option>
+                </select><br>
+
+                <button type="reset" id="button-reset">Reset</button>
+                <button type="submit" id="button-submit">Submit</button>
+            </form>
+        </main>
+        <footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+        <script>
+            document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator-validator?uri=" + location.href);
+        </script>
+        <script src="scripts/HTMLInclude.min.js"></script>
+    </body>
+</html>
