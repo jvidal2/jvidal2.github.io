@@ -136,7 +136,7 @@ label[for="excellent"], label[for="average"], label[for="poor"], label[for="yes"
 input[type="text"], input[type="tel"], input[type="email"] {
     min-height: 2rem;
     font-size: 0.7em;
-    width: 70%;
+    width: 100%;
     vertical-align: middle;
 }
 
