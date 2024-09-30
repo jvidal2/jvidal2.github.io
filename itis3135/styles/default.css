@@ -27,6 +27,7 @@ h2 {
 
 h3 {
     text-align: center;
+    color: black;
 }
 
 figure img {
@@ -94,10 +95,6 @@ form {
     border: 2px solid black;
     border-radius: 3px;
     background-color: rgba(240, 233, 196, 0.485);
-}
-
-form h3 {
-    color: black;
 }
 
 input, select, button {
