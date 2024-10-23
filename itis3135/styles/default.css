@@ -30,12 +30,12 @@ body {
 }
 
 a {
-    color: magenta;
+    color: rgb(0, 100, 0);
     text-decoration: none;
 }
 
 a:hover {
-    color: brown;
+    color: rgb(255, 165, 0);
 }
 
 main {

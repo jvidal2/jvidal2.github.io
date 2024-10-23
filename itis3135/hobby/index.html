@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Games</title>
+    <style>
+        @media screen and (min-width: 981px) and (max-width: 1400px) {
+            main {
+                width: 85%;
+                margin: 0 auto;
+            }
+        }
+
+        @media screen and (min-width: 601px) and (max-width: 980px) {
+            main {
+                max-width: 1000px;
+                width: 95%;
+                margin: 0 auto;
+            }
+        }
+
+        @media screen and (min-width: 370px) and (max-width: 600px) {
+            main {
+                max-width: 100%;
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #1e1e2e; 
+            font-family: Georgia;
+            color: navy;
+        }
+        header {
+            background-color: #2c2c3c;
+            color: #9af7f7; 
+            padding: 20px;
+            text-align: center;
+            font-size: 1.1em;
+            border-bottom: 2px solid #74d4ff;
+        }
+        main {
+            flex-grow: 1;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #2a2a40;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(148, 255, 233, 0.5);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+            align-items: center;
+        }
+        nav a {
+            color: #74ffaf;
+            padding: 10px;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+        section {
+            display: none;
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 5px;
+        }
+        section.active {
+            display: block;
+        }
+        footer {
+            background-color: #2c2c3c;
+            color: #74d4ff; 
+            text-align: center;
+            padding: 15px;
+            border-top: 2px solid ;
+            box-shadow: 0 0 15px rgba(148, 255, 233, 0.5);
+        }
+        footer a {
+            color: #74ffaf;
+            text-decoration: none;
+        }
+        figure {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #home img,
+        #about img,
+        #best-games img,
+        #where img,
+        #how img,
+        #why img {
+            height: auto;
+            width: 50%;
+            margin: 0 auto; 
+            padding: 10px;
+        }
+        figcaption {
+            font-size: 0.8rem;
+            font-style: italic;
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+        }
+        #home figure p, 
+        #about figure p, 
+        #best-games figure p, 
+        #where figure p, 
+        #how figure p,
+        #why figure p {
+            font-size: 0.7rem;
+            font-style: italic;
+        }
+        form {
+            border: 3px solid #74ffaf;
+            border-radius: 10px;
+            padding: 0 20px 20px 20px;
+            margin: 0 auto;
+            box-shadow: 0 0 15px #74ffaf;
+        }
+        form h3 {
+            text-align: center;
+            font-size: 1.3rem;
+        }
+        form label {
+            font-size: 1.1rem;
+            padding: 10px 0 20px 0;
+        }
+        form input {
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+        input[type="submit"] {
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Video Games</h1>
+        <nav>
+            <a href="#home" onclick="showSection('home')">Home</a> 🎮 
+            <a href="#about" onclick="showSection('about')">About</a> 🎮 
+            <a href="#best-games" onclick="showSection('best-games')">Best Games</a> 🎮 
+            <a href="#where" onclick="showSection('where')">Where</a> 🎮 
+            <a href="#how" onclick="showSection('how')">How</a> 🎮 
+            <a href="#why" onclick="showSection('why')">Why</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="active">
+            <h2>Home</h2>
+            <p>Welcome to my hobby page dedicated to video games! Video games are a 
+                fun way to escape reality and dive into awesome adventures with friends 
+                or solo. Whether you’re battling or exploring magical lands, there’s 
+                always something new and exciting waiting for you!</p>
+            <figure>
+                <img src="images/videogames.jpg" alt="Person playing video games">
+                <figcaption>Immerse yourself in the ultimate gaming experience, where 
+                    every detail creates a perfect blend of focus and comfort.</figcaption>
+                    <p>Prompt I used to generate picture with ChatGPT: A 2D illustration of a person sitting at 
+                        a gaming desk, focused on their high-end gaming PC setup. The room is softly 
+                        lit with led lights at night.</p>
+            </figure>
+        </section>
+
+        <section id="about">
+            <h2>About</h2>
+            <p>I’ve enjoyed playing video games since childhood, starting 
+                with my VTech tablet and evolving through consoles and PCs. My love for 
+                gaming really took off in middle school, and I’ve since developed a liking for 
+                open-world, FPS, and co-op games. Some of my current favorites are Fortnite, 
+                GTA, Minecraft, and Detroit: Become Human. I love gaming because it allows me to 
+                unwind and have fun with my friends without taking things too seriously. For me, 
+                gaming is a way to escape reality and connect with others.</p>
+            <p>One of the things I love most about gaming is the feeling of escaping reality and 
+                entering a completely different world. Whether it's exploring open landscapes, 
+                completing intense missions, defeating all other players, or simply unwinding after 
+                a long day. In those moments, all stress and worry fades away, and I’m fully immersed 
+                in the characters, stories, and challenges that these games create. It’s an adventure 
+                every time whether I’m saving the world, building my own, or just teaming up with 
+                friends for some fun.</p>
+            <figure>
+                <img src="images/videogameimmersion.jpg" alt="Person immersed into video game">
+                <figcaption>Lost in another world, where the only limit is imagination.</figcaption>
+                <p>Prompt I used to generate picture with ChatGPT: A 2D illustration of a person sitting 
+                    in front of a gaming PC, completely immersed in a fantasy world displayed on the 
+                    screen. The gaming setup blends with the fantasy elements, showing the person escaping into the game.</p>
+            </figure>
+        </section>
+
+        <section id="best-games">
+            <h2>Best Games</h2>
+            <p>Over the years, I’ve played a lot of games, but a few stand out as my absolute favorites. 
+                These are the ones that keep me coming back for more, whether it’s the thrill of competition, 
+                the freedom to explore, or the chance to connect with friends.</p>
+            <ul> 
+                <li><b>Fortnite:</b> I have been playing this game for years now. I love the fast-paced action, the 
+                    silly glitches, and the new skins and emotes. Whether I’m playing solo or teaming up with 
+                    friends, it’s always a new experience.</li>
+                <li><b>Grand Theft Auto V:</b> GTA offers an open-world experience like no other. The freedom to explore, 
+                    complete missions, or just cause chaos in the streets makes it a game that never gets old. The 
+                    storytelling and detailed world-building keep me hooked every time.</li>
+                <li><b>Minecraft:</b> Minecraft is my go to for creativity and relaxation. Building, exploring, and surviving 
+                    in a limitless blocky world lets me tap into my imagination, whether I’m crafting elaborate structures or 
+                    just enjoying the simple pleasures of exploration.</li>
+                <li><b>Detroit: Become Human:</b> Detroit: Become Human is a game that stands out for its emotional storytelling 
+                    and immersive decision-making. Every choice I make has a direct impact on the story, which makes each playthrough 
+                    feel unique and personal. It’s like being in control of an interactive movie.</li>
+                <li><b>Phasmophobia:</b> Phasmophobia is a fun co-op game where I team up with friends to hunt ghosts 
+                    and uncover their mysteries. The tension and thrill of investigating haunted locations, combined with the 
+                    eerie atmosphere, create unforgettable moments. It's a perfect blend of teamwork, strategy, and a good scare!</li>
+            </ul>
+            <figure>
+                <img src="images/bestvideogames.jpg" alt="Collage of various games.">
+                <figcaption>Embarking on thrilling adventures across diverse gaming worlds, where every experience is a new journey.</figcaption>
+                <p>Prompt I used to generate this picture with ChatGPT: A 2D illustration showcasing a gamer surrounded by various game worlds representing games: 
+                    Fortnite, GTA, Minecraft, Detroit: Become Human, and Phasmophobia.</p>
+            </figure>
+        </section>
+
+        <section id="where">
+            <h2>Where to play</h2>
+            <p>Your gaming experience can be greatly influenced by where you play. Here are some common gaming setups:</p>
+            <ul>
+                <li><strong>At Home:</strong> Whether it’s your bedroom, a dedicated gaming room, or the living room, home setups offer comfort and 
+                    customization. You can be as loud as you want, have everything the way you want, from your desk setup to lighting to accessibility 
+                    to snacks, allowing for an optimal experience.</li>
+                <li><strong>Gaming Cafes:</strong> These places are designed for gamers, offering high-end PCs and consoles for public use. They 
+                    provide a social atmosphere where you can game with friends or meet new people.</li>
+                <li><strong>On the Go:</strong> Mobile gaming allows you to play anytime, anywhere. Whether you’re commuting, traveling, or just 
+                    hanging out of your house, mobile games bring the flexibility to enjoy your favorite titles wherever you are.</li>
+            </ul>
+            <figure>
+                <img src="images/videogamewhere.jpg" alt="Person playing video game on console.">
+                <figcaption>From personalized home setups to social gaming cafes and mobile gaming on the go, there’s always a place to enjoy 
+                    your favorite games wherever you are.</figcaption>
+                <p>Prompt I used to generate this picture with ChatGPT: A 2D illustration of a gamer in their room, playing on a PlayStation. The setup includes 
+                    a desk with a PC monitor, keyboard, and the gamer wearing a headset. A Nintendo Switch rests on the bed.</p>
+            </figure>
+        </section>
+
+        <section id="how">
+            <h2>How to Choose Your Platform</h2>
+            <p>Here are 5 things to consider when choosing a gaming platform:</p>
+            
+            <h3>Different Platforms</h3>
+            <ul>
+                <li><strong>Console Gaming:</strong>
+                    <ul>
+                        <li><strong>Popular brands:</strong> PlayStation, Xbox, and Nintendo Switch.</li>
+                        <li><strong>Pros:</strong> Easy setup, exclusive games, optimized for gaming.</li>
+                        <li><strong>Cons:</strong> Limited customization and hardware upgrades.</li>
+                    </ul>
+                </li>
+                <li><strong>PC Gaming:</strong>
+                    <ul>
+                        <li>Can be customizable or prebuilt.</li>
+                        <li><strong>Pros:</strong> Higher graphics quality, upgradeable components, a wider range of games, and access to mods.</li>
+                        <li><strong>Cons:</strong> Higher initial setup cost, requires regular updates/upgrades.</li>
+                    </ul>
+                </li>
+                <li><strong>Mobile Gaming:</strong>
+                    <ul>
+                        <li>You can game on smartphones or tablets.</li>
+                        <li><strong>Pros:</strong> Convenience, portability, often cheaper or free games.</li>
+                        <li><strong>Cons:</strong> Limited in game complexity and control options.</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Consider What Games You Want to Play</h3>
+            <p>Some games are exclusive to certain platforms, while others are multiplatform. Consider which games you enjoy and if they are available 
+                on the platform you're choosing.</p>
+            <h3>Budget</h3>
+            <p>Consoles are generally affordable upfront, while PC gaming can be more expensive. Mobile gaming is often the cheapest option since most 
+                people already own a smartphone.</p>
+            <h3>Portability</h3>
+            <p>If you want to game on the go, consider platforms like the Nintendo Switch or mobile gaming. PCs and other consoles are typically stationary, 
+                though gaming laptops offer some portability.</p>
+            <h3>Assess Your Tech Savvy</h3>
+            <p>PC gaming requires more technical knowledge for setup and maintenance, while consoles and mobile devices offer simpler, plug-and-play options 
+                for casual gamers.</p>
+            <figure>
+                <img src="images/videogameplatform.jpg" alt="Image of all 3 platforms.">
+                <figcaption>Choosing between console, PC, and mobile gaming depends on factors like setup simplicity, game variety, and on-the-go convenience.</figcaption>
+                <p>Prompt I used to generate this picture with ChatGPT: A 2d illustration showing three distinct gaming platforms: a console setup like a PlayStation or 
+                    Xbox connected to a TV, a gaming PC setup with a high-performance monitor and RGB lights, and a mobile phone with a game open on the screen. </p>
+            </figure>
+        </section>        
+
+        <section id="why">
+            <h2>Why game?</h2>
+            People play video games for many reasons, ranging from escaping their everyday lives to entertainment. Games offer a break from reality, allowing players to dive 
+            into new worlds and forget about everyday stresses. They also encourage creativity and exploration, with games like Minecraft and GTA letting 
+            players build, design, and discover freely. Gaming is a social activity as well, giving people the chance to connect with friends or meet new 
+            people through multiplayer experiences. For many, the challenge of overcoming obstacles and improving their skills is a rewarding aspect, while 
+            at the heart of it, gaming is about having fun and enjoying the thrill of the experience.
+            <figure>
+                <img src="images/videogamewhy.jpg" alt="Getting lost in the video game.">
+                <figcaption>Immersing into a new reality where the boundaries between the real world and gaming fade away.</figcaption>
+                <p>Prompt I used to generate this picture with ChatGPT: A vibrant 2d illustration of escaping reality and into the gaming world.</p>
+            </figure>
+            <form action="submit-form.php" method="POST">
+                <h3>Tell Us Why You Game!</h3>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label>Why do you play video games? (Select all that apply)</label><br>
+                <input type="checkbox" id="escapism" name="escapism" value="Escapism">
+                <label for="escapism">Escapism</label><br>
+
+                <input type="checkbox" id="socialize" name="socialize" value="Socializing">
+                <label for="socializing">Socialize</label><br>
+
+                <input type="checkbox" id="creativity" name="creativity" value="Creativity">
+                <label for="creativity">Creativity</label><br>
+
+                <input type="checkbox" id="challenge" name="challenge" value="Challenge">
+                <label for="challenge">Challenge</label><br>
+
+                <input type="checkbox" id="fun" name="fun" value="Fun">
+                <label for="fun">Fun</label><br><br>
+
+                <label for="favorite-game">What’s your favorite game?</label><br>
+                <input type="text" id="favorite-game" name="favorite-game" required><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Designed by <a href="jzvcreations.com/index.html" target="_blank">JZV Creations</a>&copy 2024, <i><a href="https://www.freecodecamp.org/certification/jvidal2/responsive-web-design" target="_blank">Certified in Responsive Web Design</a></i></p>
+        <a href="https://validator.w3.org/check?uri=https://jvidal2.github.io/itis3135/" id="validation-link-html">
+            <img src="images/button_validation_html5.png" width="88" height="31" alt="Validate webpage HTML.">
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/https://jvidal2.github.io/itis3135/" id="validation-link-css">
+            <img src="images/button_validation_css.png" width="88" height="31" alt="Validate webpage CSS.">
+        </a>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('main section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
