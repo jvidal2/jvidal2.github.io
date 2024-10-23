@@ -116,15 +116,6 @@
         h2 {
             text-align: center;
         }
-        #home figure p, 
-        #about figure p, 
-        #best-games figure p, 
-        #where figure p, 
-        #how figure p,
-        #why figure p {
-            font-size: 0.7rem;
-            font-style: italic;
-        }
         form {
             border: 3px solid #74ffaf;
             border-radius: 10px;
@@ -146,6 +137,15 @@
         }
         input[type="submit"] {
             font-size: 1rem;
+        }
+        #home p:nth-of-type(2),
+        #about p:nth-of-type(3),
+        #best-games p:nth-of-type(2),
+        #where p:nth-of-type(2),
+        #how p:nth-of-type(6),
+        #why p:nth-of-type(2) {
+            font-size: 0.8em;
+            font-style: italic;
         }
     </style>
 </head>
@@ -173,10 +173,10 @@
                 <img src="images/videogames.jpg" alt="Person playing video games">
                 <figcaption>Immerse yourself in the ultimate gaming experience, where 
                     every detail creates a perfect blend of focus and comfort.</figcaption>
-                    <p>Prompt I used to generate picture with Bing Image Creator: A 2D illustration of a person sitting at 
-                        a gaming desk, focused on their high-end gaming PC setup. The room is softly 
-                        lit with led lights at night.</p>
             </figure>
+            <p>Prompt I used to generate picture with Bing Image Creator: A 2D illustration of a person sitting at 
+                a gaming desk, focused on their high-end gaming PC setup. The room is softly 
+                lit with led lights at night.</p>
         </section>
 
         <section id="about">
@@ -198,10 +198,10 @@
             <figure>
                 <img src="images/videogameimmersion.jpg" alt="Person immersed into video game">
                 <figcaption>Lost in another world, where the only limit is imagination.</figcaption>
-                <p>Prompt I used to generate picture with Bing Image Creator: A 2D illustration of a person sitting 
-                    in front of a gaming PC, completely immersed in a fantasy world displayed on the 
-                    screen. The gaming setup blends with the fantasy elements, showing the person escaping into the game.</p>
             </figure>
+            <p>Prompt I used to generate picture with Bing Image Creator: A 2D illustration of a person sitting 
+                in front of a gaming PC, completely immersed in a fantasy world displayed on the 
+                screen. The gaming setup blends with the fantasy elements, showing the person escaping into the game.</p>
         </section>
 
         <section id="best-games">
@@ -229,9 +229,9 @@
             <figure>
                 <img src="images/bestvideogames.jpg" alt="Collage of various games.">
                 <figcaption>Embarking on thrilling adventures across diverse gaming worlds, where every experience is a new journey.</figcaption>
-                <p>Prompt I used to generate this picture with Bing Image Creator: A 2D illustration showcasing a gamer surrounded by various game worlds representing games: 
-                    Fortnite, GTA, Minecraft, Detroit: Become Human, and Phasmophobia.</p>
             </figure>
+            <p>Prompt I used to generate this picture with Bing Image Creator: A 2D illustration showcasing a gamer surrounded by various game worlds representing games: 
+                Fortnite, GTA, Minecraft, Detroit: Become Human, and Phasmophobia.</p>
         </section>
 
         <section id="where">
@@ -250,15 +250,14 @@
                 <img src="images/videogamewhere.jpg" alt="Person playing video game on console.">
                 <figcaption>From personalized home setups to social gaming cafes and mobile gaming on the go, there’s always a place to enjoy 
                     your favorite games wherever you are.</figcaption>
-                <p>Prompt I used to generate this picture with Bing Image Creator: A 2D illustration of a gamer in their room, playing on a PlayStation. The setup includes 
-                    a desk with a PC monitor, keyboard, and the gamer wearing a headset. A Nintendo Switch rests on the bed.</p>
             </figure>
+            <p>Prompt I used to generate this picture with Bing Image Creator: A 2D illustration of a gamer in their room, playing on a PlayStation. The setup includes 
+                a desk with a PC monitor, keyboard, and the gamer wearing a headset. A Nintendo Switch rests on the bed.</p>
         </section>
 
         <section id="how">
             <h2>How to Choose Your Platform</h2>
             <p>Here are 5 things to consider when choosing a gaming platform:</p>
-            
             <h3>Different Platforms</h3>
             <ul>
                 <li><strong>Console Gaming:</strong>
@@ -298,23 +297,23 @@
             <figure>
                 <img src="images/videogameplatform.jpg" alt="Image of all 3 platforms.">
                 <figcaption>Choosing between console, PC, and mobile gaming depends on factors like setup simplicity, game variety, and on-the-go convenience.</figcaption>
-                <p>Prompt I used to generate this picture with Bing Image Creator: A 2d illustration showing three distinct gaming platforms: a console setup like a PlayStation or 
-                    Xbox connected to a TV, a gaming PC setup with a high-performance monitor and RGB lights, and a mobile phone with a game open on the screen. </p>
             </figure>
+            <p>Prompt I used to generate this picture with Bing Image Creator: A 2d illustration showing three distinct gaming platforms: a console setup like a PlayStation or 
+                Xbox connected to a TV, a gaming PC setup with a high-performance monitor and RGB lights, and a mobile phone with a game open on the screen. </p>
         </section>        
 
         <section id="why">
             <h2>Why game?</h2>
-            People play video games for many reasons, ranging from escaping their everyday lives to entertainment. Games offer a break from reality, allowing players to dive 
+            <p>People play video games for many reasons, ranging from escaping their everyday lives to entertainment. Games offer a break from reality, allowing players to dive 
             into new worlds and forget about everyday stresses. They also encourage creativity and exploration, with games like Minecraft and GTA letting 
             players build, design, and discover freely. Gaming is a social activity as well, giving people the chance to connect with friends or meet new 
             people through multiplayer experiences. For many, the challenge of overcoming obstacles and improving their skills is a rewarding aspect, while 
-            at the heart of it, gaming is about having fun and enjoying the thrill of the experience.
+            at the heart of it, gaming is about having fun and enjoying the thrill of the experience.</p>
             <figure>
                 <img src="images/videogamewhy.jpg" alt="Getting lost in the video game.">
                 <figcaption>Immersing into a new reality where the boundaries between the real world and gaming fade away.</figcaption>
-                <p>Prompt I used to generate this picture with Bing Image Creator: A vibrant 2d illustration of escaping reality and into the gaming world.</p>
             </figure>
+            <p>Prompt I used to generate this picture with Bing Image Creator: A vibrant 2d illustration of escaping reality and into the gaming world.</p>
             <form action="submit-form.php" method="POST">
                 <h3>Tell Us Why You Game!</h3>
                 <label for="name">Name:</label><br>
@@ -325,7 +324,7 @@
                 <label for="escapism">Escapism</label><br>
 
                 <input type="checkbox" id="socialize" name="socialize" value="Socializing">
-                <label for="socializing">Socialize</label><br>
+                <label for="socialize">Socialize</label><br>
 
                 <input type="checkbox" id="creativity" name="creativity" value="Creativity">
                 <label for="creativity">Creativity</label><br>
