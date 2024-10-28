@@ -45,6 +45,7 @@ main {
     max-width: 1200px;
     width: 90%;
     margin: 0 auto;
+    padding-bottom: 20px;
 }
 
 h2 {
@@ -169,7 +170,7 @@ label[for="excellent"], label[for="average"], label[for="poor"], label[for="yes"
     font-weight: normal;
 }
 
-input[type="text"], input[type="tel"], input[type="email"] {
+form input[type="text"], input[type="tel"], input[type="email"] {
     min-height: 2rem;
     font-size: 0.7em;
     width: 100%;
@@ -190,4 +191,30 @@ select {
 
 ul li {
     margin-bottom: 15px;
+}
+
+#user-input-section input, #polygon-section input {
+    display: block; 
+    min-height: 1.7rem;
+    font-size: 0.9rem;
+    width: 40%;
+}
+
+#user-input-section button, #polygon-section button, #function-section button {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 15%;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+#function-section button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    height: 2.8rem;
+    width: 18%;
 }
