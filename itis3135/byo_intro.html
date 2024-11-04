@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Jazmin Vidal's Jaded Vulture 🂲 BYO Intro</title>
+        <link rel="stylesheet" href="styles/default.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div data-include="components/header.html"></div>
+        </header>
+        <main>
+            <h2>BYO Intro</h2>
+            <h3>Time to BYO Intro page, please fill out the form below to create your page.</h3>
+            <form id="intro-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Jazmin Vidal" required>
+                <label for="mascot">Mascot:</label>
+                <input type="text" id="mascot" placeholder="Jaded Vulture" required>
+                <label for="image">Image:</label>
+                <input type="file" id="image" accept=".png, .jpg" required>
+                <label for="caption">Image Caption:</label>
+                <input type="text" id="caption" placeholder="Caption for image" required>
+                <label for="personal-bg">Personal Background:</label>
+                <textarea id="personal-bg" placeholder="I was born and raised in Charlotte..." required></textarea>
+                <label for="professional-bg">Professional Background:</label>
+                <textarea id="professional-bg" placeholder="I have been working part-time... " required></textarea>
+                <label for="academic-bg">Academic Background:</label>
+                <textarea id="academic-bg" placeholder="I am majoring in Computer Science..." required></textarea>
+                <label for="webdev-bg">Background in Web Development:</label>
+                <textarea id="webdev-bg" placeholder="I have some experience..." required></textarea>
+                <label for="computer-platform">Primary Computer Platform:</label>
+                <input type="text" id="computer-platform" placeholder="Windows" required>
+
+                <div id="courses">
+                    <label>Courses currently taking:</label>
+                    <button type="button" id="add-course">Add Course</button>
+                </div>
+                
+                <label for="funny-thing">Funny thing?</label>
+                <input type="text" id="funny-thing" placeholder="Something funny">
+                <label for="anything-else">Anything else?</label>
+                <textarea id="anything-else" placeholder="Tell us more"></textarea>
+                <label>
+                    <input type="checkbox" id="agree" required>
+                    I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.
+                </label>
+                <input type="submit" value="Submit" id="button-submit">
+                <input type="reset" value="Reset" id="button-reset">
+            </form>
+
+            <div id="result"></div>
+        </main>
+        <footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+        <script>
+            document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator-validator?uri=" + location.href);
+        </script>
+        <script src="scripts/survey.js" defer></script>
+        <script src="scripts/HTMLInclude.min.js"></script>
+    </body>
+</html>
