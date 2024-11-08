@@ -1,0 +1,16 @@
+<p>Designed by <a href="jzvcreations.com/index.html" target="_blank">JZV Creations</a>&copy 2024, 
+    <i><a href="https://www.freecodecamp.org/certification/jvidal2/responsive-web-design" target="_blank">Certified in Responsive Web Design</a></i>, 
+    <i><a href="https://www.freecodecamp.org/certification/jvidal2/responsive-web-design" target="_blank">Certified in JS</a></i>
+</p>
+<a href="https://validator.w3.org/check?uri=https://jvidal2.github.io/itis3135/" id="validation-link-html">
+    <img src="images/button_validation_html5.png" width="88" height="31" alt="Validate webpage HTML.">
+</a>
+<a href="https://jigsaw.w3.org/css-validator/check/https://jvidal2.github.io/itis3135/" id="validation-link-css">
+    <img src="images/button_validation_css.png" width="88" height="31" alt="Validate webpage CSS.">
+</a>
+
+<script>
+    const currentPageURL = window.location.href;
+    document.getElementById("validation-link-html").href = `https://validator.w3.org/check?uri=${currentPageURL}`;
+    document.getElementById('validation-link-css').href = `https://jigsaw.w3.org/css-validator/check/${currentPageURL}`;
+</script>

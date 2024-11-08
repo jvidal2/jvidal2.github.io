@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Jalisco &amp SLP Contact Us</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="icon" href="images/jalisco&slptransparent.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>Contact Us</h2>
+        <p>Have questions or want to book a service? Reach out to us below!</p>
+
+        <form id="contactform">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Jane Doe">
+            <span id="name-error" class="error-message"></span>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="yourname@gmail.com" required>
+            <span id="email-error" class="error-message"></span>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="\\d{10}" required placeholder="1234567890">
+            <span id="phone-error" class="error-message"></span>
+
+            <fieldset>
+                <legend>What service would you like to rent?</legend>
+                <label>
+                    <input type="checkbox" id="tables" name="services" value="Tables"> Tables
+                </label>
+                <label>
+                    <input type="checkbox" id="chairs" name="services" value="Chairs"> Chairs
+                </label>
+                <label>
+                    <input type="checkbox" id="mech-bull" name="services" value="Mechanical Bull"> Mechanical Bull
+                </label>
+                <label>
+                    <input type="checkbox" id="bounce-house" name="services" value="Bounce House"> Bounce House
+                </label>
+            </fieldset>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="I would like to book ## chairs..." required></textarea>
+
+            <button id="send-msg">Send Message</button>
+        </form>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator-validator?uri=" + location.href);
+    </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Jalisco &amp SLP Gallery</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="icon" href="images/jalisco&slptransparent.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>Gallery</h2>
+        
+        <div class="gallery-container">
+            <div class="gallery-image">
+                <img id="current-image" src="images/mechanicalbull2.jpeg" alt="Beautiful setup">
+                <p id="caption">Beautiful setup</p>
+            </div>
+            <div class="gallery-controls">
+                <button id="prev-button">Previous</button>
+                <button id="next-button">Next</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator-validator?uri=" + location.href);
+    </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/gallery.js"></script>
+
+</body>
+</html>
