@@ -8,9 +8,8 @@
         <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header>
-            <div data-include="components/header.html"></div>
-        </header>
+        <header id="header-container"></header>
+        <nav id="submenu-container"></nav>
         <main>
             <h2>Tables</h2>
             <h3>My Tabular Data</h3>
@@ -143,13 +142,7 @@
             <figcaption>Employee Information for Jaded Vulture: Overview of employees categorized by department, including their roles, years of service, and salaries</figcaption>
             </figure>
         </main>
-        <footer>
-            <div data-include="components/footer.html"></div>
-        </footer>
-        <script>
-            document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
-            document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator-validator?uri=" + location.href);
-        </script>
-        <script src="scripts/HTMLInclude.min.js"></script>
+        <footer id="footer-container"></footer>
+        <script src="scripts/script.js"></script> 
     </body>
 </html>

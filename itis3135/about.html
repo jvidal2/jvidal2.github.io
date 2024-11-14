@@ -8,9 +8,8 @@
         <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header>
-            <div data-include="components/header.html"></div>
-        </header>
+        <header id="header-container"></header>
+        <nav id="submenu-container"></nav>
         <main>
             <h2>About Us</h2>
             <p>At Jaded Vulture, we believe that collecting anime figures should be an experience as thrilling and bold as the characters themselves. 
@@ -18,13 +17,7 @@
                 like the vulture’s unyielding gaze. Whether you're a seasoned collector or new to the world of anime, our figures are designed to stand out
                  and captivate. You can trust us to deliver pieces that embody the spirit, strength, and style of your favorite anime characters.</p>
         </main>
-        <footer>
-            <div data-include="components/footer.html"></div>
-        </footer>
-        <script>
-            document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
-            document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator-validator?uri=" + location.href);
-        </script>
-        <script src="scripts/HTMLInclude.min.js"></script>
+        <footer id="footer-container"></footer>
+        <script src="scripts/script.js"></script> 
     </body>
 </html>

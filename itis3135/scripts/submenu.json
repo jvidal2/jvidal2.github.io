@@ -1,0 +1,5 @@
+[
+    {"name": "Crappy Webpage", "url": "stuff/cRaPpY.htm", "target": "_blank"},
+    {"name": "Hobby Page", "url": "hobby/index.html", "target": "_blank"},
+    {"name": "Client Project", "url": "project/index.html", "target": "_blank"}
+]
