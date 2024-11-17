@@ -10,5 +10,6 @@
     {"name": "First Scripts", "url": "firstscripts.html"},
     {"name": "BYO Intro", "url": "byo_intro.html"},
     {"name": "Emmet Page", "url": "emmet.html"},
-    {"name": "Interactive Drawing", "url": "drawing.html"}
+    {"name": "Interactive Drawing", "url": "drawing.html"},
+    {"name": "Slideshow Gallery", "url": "slideshow.html"}
 ]

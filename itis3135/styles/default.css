@@ -264,3 +264,51 @@ canvas {
     align-items: center;
     margin: 0 auto;
 }
+
+.slides {
+    position: relative; 
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.slides img {
+    display: block; 
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    font-size: 3rem;
+}
+
+.prev {
+    left: 10%;
+}
+
+.next {
+    right: 10%;
+}
+
+.prompts {
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
+}
+
+.caption-container {
+    display: flex;
+}
+
+#caption {
+    display: block;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 20px; 
+}
