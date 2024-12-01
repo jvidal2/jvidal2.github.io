@@ -3,7 +3,8 @@ const galleryImages = [
     { src: "images/partybouncehouse.jpeg", caption: "Bouncy house at event" },
     { src: "images/tablesandchairs.jpeg", caption: "Tables and chairs at event" },
     { src: "images/partymechbull.jpeg", caption: "Mechanical bull in action" },
-    { src: "images/partymechbull3.jpeg", caption: "Our mechanical bull is perfect for all ages!" }
+    { src: "images/partymechbull3.jpeg", caption: "Our mechanical bull is perfect for all ages!" },
+    { src: "images/partymechbull2.jpeg", caption: "Test run" } 
 ];
 
 let currentIndex = 0;
@@ -27,6 +28,11 @@ function prevImage() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+    galleryImages.forEach((img) => {
+        const preloaded = new Image();
+        preloaded.src = img.src;
+    });
+
     updateImage();
 
     const prevButton = document.getElementById("prev-button");

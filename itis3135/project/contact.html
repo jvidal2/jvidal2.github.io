@@ -13,10 +13,11 @@
         <div data-include="components/header.html"></div>
     </header>
     <main>
+        <button id="translate-btn">Traducir a Español!</button>
         <h2>Contact Us</h2>
         <p>Have questions or want to book a service? Reach out to us below!</p>
 
-        <form id="contactform">
+        <form id="contactform" action="https://formspree.io/f/mbljpbob" method="POST">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" placeholder="Jane Doe">
             <span id="name-error" class="error-message"></span>
@@ -46,7 +47,7 @@
             </fieldset>
 
             <label for="message">Message:</label>
-            <textarea id="message" name="message" placeholder="I would like to book ## chairs..." required></textarea>
+            <textarea id="message" name="message" placeholder="I would like to book..." required></textarea>
 
             <button id="send-msg">Send Message</button>
         </form>
@@ -59,5 +60,6 @@
         document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator-validator?uri=" + location.href);
     </script>
     <script src="scripts/HTMLInclude.min.js"></script>
+    <script type="text/javascript" src="scripts/translate.js"></script>
 </body>
 </html>
